@@ -25,7 +25,6 @@ Django separa el código en dos niveles, y entender la diferencia es lo más imp
 Project01/
 ├── .gitignore
 ├── README.md                ← este archivo
-├── CLAUDE.md                ← guía para Claude Code
 ├── requirements.txt         ← dependencias Python
 ├── manage.py                ← punto de entrada CLI (runserver, migrate, etc.)
 ├── db.sqlite3               ← base de datos local (gitignored)
