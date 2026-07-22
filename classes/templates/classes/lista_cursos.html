@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Cursos</title>
+</head>
+<body>
+    <h1>Nuestros Cursos</h1>
+
+    <ul>
+        {% for curso in cursos %}
+            <li>
+                <strong>Curso:</strong> 
+                <a href="{% url 'detalle_curso' curso.pk %}">{{ curso.nombre }}</a> | 
+                <strong>Grado:</strong> {{ curso.grado }}
+            </li>
+        {% empty %}
+            <li>No hay cursos registrados en este momento.</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
